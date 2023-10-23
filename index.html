@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recréer Angulat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <article>
+            <header>
+                <h1>Recréer Angular</h1>
+            </header>
+            <counter initial-value="5" step="10.2"></counter>
+            <user-profile first-name="Rom" last-name="LECLAIR" job="Data"></user-profile>
+            <input 
+                phone-number 
+                [with-spaces]="false"
+                border-color="green" 
+                type="text" 
+                placeholder="Numéro de mobile" 
+                id="mobile-number"
+            />
+            <input 
+                phone-number 
+                type="text" 
+                placeholder="Numéro de fixe" 
+                id="fixe-number"
+            />
+            <input 
+                credit-card 
+                type="text" 
+                placeholder="Numéro de carte blue" 
+                id="card-number"
+            />
+        </article>
+
+        
+    </div>
+    <script src="src/app.ts" type="module"></script>
+</body>
+</html>
